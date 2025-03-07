@@ -12,7 +12,7 @@ diets = pd.read_csv('datasets/diets.csv')
 description = pd.read_csv('datasets/description.csv')
 
 # model
-with open("models\content\saved_models.pkl", "rb") as file:
+with open("./models/content/saved_models.pkl", "rb") as file:
     loaded_models = pickle.load(file)
 rfc = loaded_models["RandomForestClassifier"]
 
